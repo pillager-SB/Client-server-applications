@@ -55,6 +55,7 @@ for adr in ['yandex.ru', 'youtube.com']:
         print(line.decode('utf-8'))
 
 separator(6)
+
 from chardet import detect
 
 with open('test.txt', 'w') as file:  # Создание файла, состоящего из трех строк.
