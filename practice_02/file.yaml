@@ -1,0 +1,9 @@
+products:
+- Doc Cut
+- Doc Standard
+- Doc Full
+version: 20
+prices:
+  price_1: 20 €
+  price_2: 50.23 €
+  price_3: 120 €

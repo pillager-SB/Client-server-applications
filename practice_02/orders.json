@@ -1,0 +1,25 @@
+{
+    "orders": [
+        {
+            "item": "Cup",
+            "quantity": 3,
+            "price": 25.6,
+            "buyer": "Orlando J. B. Bloom",
+            "date": "2022-10-01"
+        },
+        {
+            "item": "Карандаш",
+            "quantity": 1,
+            "price": 0.6,
+            "buyer": "Keanu C. Reeves",
+            "date": "2022-10-01"
+        },
+        {
+            "item": "Велосипед",
+            "quantity": 1,
+            "price": 576.2,
+            "buyer": "Николай Валуев",
+            "date": "2022-10-01"
+        }
+    ]
+}
