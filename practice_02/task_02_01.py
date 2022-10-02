@@ -17,7 +17,7 @@ def get_data():
         encoding = detect(content)['encoding']
         with open(file, encoding=encoding) as file_r:  # Получение данных из файла.
             content = file_r.read()
-        [sys_list[n].append(re.search(r"" + fnd_data[n] + ":\\s+\\b(.+)", content)[1])
+        [sys_list[n].append(re.search(rf'{fnd_data[n]}:\s+\b(.+)', content)[1])
          for n in range(len(fnd_data))]  # Заполнение списков из sys_list.
     [main_data.append(list(x)) for x in [fnd_data, *zip(*sys_list)]]  # Заполнение 'главного списка' main_data
     return main_data
