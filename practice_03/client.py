@@ -2,8 +2,8 @@ import json
 import sys
 import time
 import socket
-from practice_03.common.variables import *
-from practice_03.common.utils import send_message, get_message
+from common.variables import *
+from common.utils import send_message, get_message
 
 
 def create_presence(account_name='Guest'):

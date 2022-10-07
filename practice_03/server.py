@@ -1,8 +1,8 @@
 import json
 import sys
 import socket
-from practice_03.common.variables import *
-from practice_03.common.utils import send_message, get_message
+from common.variables import *
+from common.utils import send_message, get_message
 
 
 def process_client_message(message):
