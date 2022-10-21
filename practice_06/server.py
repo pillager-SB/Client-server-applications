@@ -36,8 +36,8 @@ def main():
     """
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('-a', '--addr', default='', help='Reading an IP address')
-    parser.add_argument('-p', '--port', default=DEFAULT_PORT, type=int, help='Read port IP address')
+    parser.add_argument('-a', '--addr', default='', help='Reading an IP address', nargs='?')
+    parser.add_argument('-p', '--port', default=DEFAULT_PORT, type=int, help='Read port IP address', nargs='?')
     args = parser.parse_args()
     listen_address = args.addr
     listen_port = args.port

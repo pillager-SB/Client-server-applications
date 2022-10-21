@@ -45,8 +45,8 @@ def main():
     при их отсутствии - обработка значений, принятых по умолчанию.
     """
     parser = argparse.ArgumentParser()
-    parser.add_argument('addr', default=DEFAULT_IP_ADDRESS, help='Reading an IP address')
-    parser.add_argument('port', type=int, default=DEFAULT_PORT, help='Read port IP address')
+    parser.add_argument('addr', default=DEFAULT_IP_ADDRESS, help='Reading an IP address', nargs='?')
+    parser.add_argument('port', type=int, default=DEFAULT_PORT, help='Read port IP address', nargs='?')
     args = parser.parse_args()
     server_address = args.addr
     server_port = args.port
