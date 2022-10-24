@@ -13,7 +13,7 @@ SERVER_LOGGER = logging.getLogger('server')
 
 
 @Log(SERVER_LOGGER)
-def process_client_message(message):
+def process_client_message(message, message_list, client):
     """
     Функция-обработчик сообщений от клиентов, принимает словарь-сообщение,
     проверяет корректность, возвращает словарь-ответ для клиента.
